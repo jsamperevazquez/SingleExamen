@@ -23,7 +23,7 @@ public class Usuarios {
 
     public static boolean conectarBaseDatos2() {
         BaseDatos usuario2 = new BaseDatos();
-        System.out.println("Conectando a " + usuario2.ipServidor + ", con el usuario " + usuario2.usuarioAnonimo);
+        System.out.println("Conectando a " + usuario2.ipServidor + ", con el usuario " + usuario2.correoElectronico);
         return usuario2.permitirConexion();
     }
 }

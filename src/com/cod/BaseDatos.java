@@ -1,19 +1,20 @@
 package com.cod;
 
 public class BaseDatos {
-    String usuarioAnonimo = "";
+
+    String correoElectronico = "";
     String ipServidor = "127.0.0.2";
 
     BaseDatos() {
-        usuarioAnonimo = "anonymous@danielcastelao.org";
+        correoElectronico = "anonymous@danielcastelao.org";
     }
 
-    BaseDatos(String nombreUsuario) {
-        this.usuarioAnonimo = nombreUsuario;
+    BaseDatos(String correoUsuario) {
+        this.correoElectronico = correoUsuario;
     }
 
     public boolean permitirConexion() {
-        if (usuarioAnonimo != "anonymous@danielcastelao.org") {
+        if (correoElectronico != "anonymous@danielcastelao.org") {
             return true;
         } else {
             return false;
